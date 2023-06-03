@@ -4,6 +4,9 @@ const port = 3000;
 const db = require('./config/mongoose');
 
 
+  
+app.use(express.json());
+
 app.get('/',(req,res)=>{
     res.send('Hello Backend');
 })
